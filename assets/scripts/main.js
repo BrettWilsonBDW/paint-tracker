@@ -300,6 +300,7 @@ function fetchData() {
       jsonData = data;
       displayAll();
       displayUserData();
+      displayUserDataModel();
       processData();
     })
     .catch(error => {
@@ -332,6 +333,8 @@ function modifyJsonDataTrue() {
 
     displayUserData();
     displayAll();
+    displayUserDataModel()
+    displayNeedOnly()
   });
 }
 
@@ -353,7 +356,7 @@ function modifyJsonDataFalse() {
 
     try {
       jsonData[inputValue]["have"] = false;
-      throw new Error("Something went wrong BOB");
+      throw new Error("Something went wrong");
     } catch (error) {
       // Swallow the error and do nothing
     }
@@ -393,9 +396,115 @@ function displayUserData() {
   }
 }
 
+function displayUserDataModel() {
+  const outputDiv = document.getElementById("itemOutputModelsNeed");
+  outputDiv.innerHTML = "";
+
+  const removeButton = document.getElementById("removeButtonModel");
+  removeButton.addEventListener("click", function() {
+    outputDiv.innerHTML = "";
+    for (const key in jsonData) {
+      const value = jsonData[key];
+      value["need"] = false
+      value["get"] = false
+    }
+    displayNeedOnly()
+  });
+
+  // for (const key in jsonData) {
+  //   const value = jsonData[key];
+  //   if (jsonData[key]["need"] === true) {
+  //     const itemElement = document.createElement("p");
+  //     itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]}<br>`;
+  //     outputDiv.appendChild(itemElement);
+  //   }
+  // }
+
+//   for (const key in jsonData) {
+//     const value = jsonData[key];
+//     const itemElement = document.createElement("p");
+//     if (jsonData[key]["have"] === true){
+//     if (value["have"] === value["need"]) {
+//       itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]} : <span style="color: green;">HAVE</span>`;
+//     } else {
+//       itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]} : <span style="color: red;">NEED</span>`;
+//     }
+//   }
+//   outputDiv.appendChild(itemElement);
+// }
+
+    for (const key in jsonData) {
+    const value = jsonData[key];
+    if (jsonData[key]["need"] === true) {
+      const itemElement = document.createElement("p");
+      // itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]}<br>`;
+      if (value["have"] === value["need"]) {
+        itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]} : <span style="color: green;">HAVE</span>`;
+        jsonData[key]["get"] = false
+      }
+      else{
+        itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]} : <span style="color: red;">NEED</span>`;
+        jsonData[key]["get"] = true
+      }
+      outputDiv.appendChild(itemElement);
+    }
+  }
+}
+
+function comparData() {
+  const inputField = document.getElementById("inputFieldModel");
+  const submitButton = document.getElementById("submitButtonModel");  const removeButton = document.getElementById("submitButtonModel");
+
+  submitButton.addEventListener("click", function() {
+    console.log("Button clicked");
+    const inputValue = inputField.value;
+
+    for (const key in jsonData) {
+      const cleanedName = jsonData[key].name.replace(/\s/g, "");
+      const cleanedInputValue = inputValue.replace(/\s/g, "");
+      if (cleanedName.toLowerCase() === cleanedInputValue.toLowerCase()) {
+        jsonData[key].need = true;
+        break;
+      }
+    }
+
+    try {
+      jsonData[inputValue]["need"] = true;
+      throw new Error("Something went wrong");
+    } catch (error) {
+      // Swallow the error and do nothing
+    }
+
+    displayUserDataModel();
+    // for (const key in jsonData){
+    //   if (jsonData[key]["have"] !== jsonData[key]["need"]) {
+    //     displayNeedOnly()
+    //   }
+    // }
+    displayNeedOnly()
+    console.log(jsonData);
+  });
+}
+
+function displayNeedOnly() {
+  const outputDiv = document.getElementById("itemOutputModelsNeedOnly");
+  outputDiv.innerHTML = "";
+
+  for (const key in jsonData) {
+    const value = jsonData[key];
+    if (jsonData[key]["get"] === true) {
+      const itemElement = document.createElement("p");
+      itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]} : <span style="color: red;">NEED</span>`;
+      outputDiv.appendChild(itemElement);
+    }
+  }
+}
+
+
 function processData() {
   modifyJsonDataTrue();
   modifyJsonDataFalse();
+  comparData();
   console.log(jsonData);
 }
 
