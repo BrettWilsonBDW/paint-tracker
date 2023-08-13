@@ -160,17 +160,146 @@
 // fetchData();
 
 
+// let jsonData;
+
+// function fetchData() {
+//   return fetch('assets\\jsons\\humbrolPiants.json')
+//     .then(response => response.json())
+//     .then(data => {
+//       jsonData = data; // Store the data in a variable
+//       // Call other functions that need to work with the data
+//       displayAll();
+//       displayUserData();
+      
+//       processData();
+//     })
+//     .catch(error => {
+//       console.error('Error:', error);
+//     });
+// }
+
+
+// function modifyJsonDataTrue() {
+//   const inputField = document.getElementById("inputField");
+//   const submitButton = document.getElementById("submitButton");
+//   // const outputDiv = document.getElementById("outputDiv");
+  
+//   submitButton.addEventListener("click", function() {
+//     const inputValue = inputField.value;
+//     // outputDiv.textContent = inputValue;
+
+//     for (const key in jsonData) {
+//       const cleanedName = jsonData[key].name.replace(/\s/g, "");
+//       const cleanedInputValue = inputValue.replace(/\s/g, "");
+//       if (cleanedName.toLowerCase() === cleanedInputValue.toLowerCase()) {
+//         jsonData[key].have = true;
+//         break;
+//       }
+//     }
+    
+//     try {
+
+//       // Code that might throw an error
+//       jsonData[inputValue]["have"] = true;
+//       throw new Error("Something went wrong BOB");
+//     } catch (error) {
+//       // Swallow the error and do nothing
+//     }
+//     // console.log(jsonData); // Updated JSON data
+    
+//     // accessJsonData(); // Call accessJsonData() to redisplay the data
+//     displayUserData()
+//     displayAll()
+//   });
+// }
+
+// function modifyJsonDataFalse() {
+//   const inputField = document.getElementById("inputFieldFalse");
+//   const submitButton = document.getElementById("submitButtonFalse");
+//   // const outputDiv = document.getElementById("outputDiv");
+  
+//   submitButton.addEventListener("click", function() {
+//     const inputValue = inputField.value;
+//     // outputDiv.textContent = inputValue;
+
+//     for (const key in jsonData) {
+//       const cleanedName = jsonData[key].name.replace(/\s/g, "");
+//       const cleanedInputValue = inputValue.replace(/\s/g, "");
+//       if (cleanedName.toLowerCase() === cleanedInputValue.toLowerCase()) {
+//         jsonData[key].have = true;
+//         break;
+//       }
+//     }
+    
+//     try {
+
+//       // Code that might throw an error
+//       jsonData[inputValue]["have"] = false;
+//       throw new Error("Something went wrong BOB");
+//     } catch (error) {
+//       // Swallow the error and do nothing
+//     }
+//     // console.log(jsonData); // Updated JSON data
+    
+//     // accessJsonData(); // Call accessJsonData() to redisplay the data
+//     displayUserData()
+//     displayAll()
+//   });
+// }
+
+// function displayAll(){
+//   const outputDiv = document.getElementById("itemOutputAll");
+//   outputDiv.innerHTML = ""; // Clear previous display
+//   modifyJsonDataTrue()
+//   modifyJsonDataFalse()
+  
+//   for (const key in jsonData) {
+//     const value = jsonData[key];
+//     const itemElement = document.createElement("p");
+//     if (value["have"] === true) {
+//       itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]} : <span style="color: green;">HAVE</span>`;
+//     } else {
+//       itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]} : <span style="color: red;">NEED</span>`;
+//     }    
+//     outputDiv.appendChild(itemElement);
+//   }
+// }
+
+// function displayUserData(){
+//   const outputDiv = document.getElementById("itemOutput");
+//   outputDiv.innerHTML = ""; // Clear previous display
+//   modifyJsonDataTrue()
+//   modifyJsonDataFalse()
+  
+//   for (const key in jsonData) {
+//     const value = jsonData[key];
+//     if (jsonData[key]["have"] === true) {
+//       const itemElement = document.createElement("p");
+//       itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]}<br>`;
+//       outputDiv.appendChild(itemElement);      
+//     }
+//   }
+// }
+
+// function processData() {
+//   // Work with the data here
+//   modifyJsonDataTrue();
+//   modifyJsonDataFalse()
+//   console.log(jsonData);
+// }
+
+// fetchData();
+
+
 let jsonData;
 
 function fetchData() {
   return fetch('assets\\jsons\\humbrolPiants.json')
     .then(response => response.json())
     .then(data => {
-      jsonData = data; // Store the data in a variable
-      // Call other functions that need to work with the data
-      // displayAll();
+      jsonData = data;
+      displayAll();
       displayUserData();
-      
       processData();
     })
     .catch(error => {
@@ -178,57 +307,95 @@ function fetchData() {
     });
 }
 
-
-function modifyJsonData() {
+function modifyJsonDataTrue() {
   const inputField = document.getElementById("inputField");
   const submitButton = document.getElementById("submitButton");
-  // const outputDiv = document.getElementById("outputDiv");
-  
+
   submitButton.addEventListener("click", function() {
     const inputValue = inputField.value;
-    // outputDiv.textContent = inputValue;
-    
-    jsonData[inputValue]["have"] = true;
-    // console.log(jsonData); // Updated JSON data
-    
-    // accessJsonData(); // Call accessJsonData() to redisplay the data
-    displayUserData()
-  });
 
-  return jsonData
-  
+    for (const key in jsonData) {
+      const cleanedName = jsonData[key].name.replace(/\s/g, "");
+      const cleanedInputValue = inputValue.replace(/\s/g, "");
+      if (cleanedName.toLowerCase() === cleanedInputValue.toLowerCase()) {
+        jsonData[key].have = true;
+        break;
+      }
+    }
+
+    try {
+      jsonData[inputValue]["have"] = true;
+      throw new Error("Something went wrong BOB");
+    } catch (error) {
+      // Swallow the error and do nothing
+    }
+
+    displayUserData();
+    displayAll();
+  });
 }
 
-function displayAll(){
+function modifyJsonDataFalse() {
+  const inputField = document.getElementById("inputFieldFalse");
+  const submitButton = document.getElementById("submitButtonFalse");
+
+  submitButton.addEventListener("click", function() {
+    const inputValue = inputField.value;
+
+    for (const key in jsonData) {
+      const cleanedName = jsonData[key].name.replace(/\s/g, "");
+      const cleanedInputValue = inputValue.replace(/\s/g, "");
+      if (cleanedName.toLowerCase() === cleanedInputValue.toLowerCase()) {
+        jsonData[key].have = true;
+        break;
+      }
+    }
+
+    try {
+      jsonData[inputValue]["have"] = false;
+      throw new Error("Something went wrong BOB");
+    } catch (error) {
+      // Swallow the error and do nothing
+    }
+
+    displayUserData();
+    displayAll();
+  });
+}
+
+function displayAll() {
   const outputDiv = document.getElementById("itemOutputAll");
-  outputDiv.innerHTML = ""; // Clear previous display
-  
+  outputDiv.innerHTML = "";
+
   for (const key in jsonData) {
     const value = jsonData[key];
     const itemElement = document.createElement("p");
-    itemElement.textContent = `${value["id"]} : ${value["name"]} : have : ${value["have"]}`;
+    if (value["have"] === true) {
+      itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]} : <span style="color: green;">HAVE</span>`;
+    } else {
+      itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]} : <span style="color: red;">NEED</span>`;
+    }
     outputDiv.appendChild(itemElement);
   }
 }
 
-function displayUserData(){
+function displayUserData() {
   const outputDiv = document.getElementById("itemOutput");
-  outputDiv.innerHTML = ""; // Clear previous display
-  modifyJsonData()
-  
+  outputDiv.innerHTML = "";
+
   for (const key in jsonData) {
     const value = jsonData[key];
     if (jsonData[key]["have"] === true) {
       const itemElement = document.createElement("p");
       itemElement.innerHTML = `<br>${value["id"]} : ${value["name"]}<br>`;
-      outputDiv.appendChild(itemElement);      
+      outputDiv.appendChild(itemElement);
     }
   }
 }
 
 function processData() {
-  // Work with the data here
-  jsonData = modifyJsonData();
+  modifyJsonDataTrue();
+  modifyJsonDataFalse();
   console.log(jsonData);
 }
 
