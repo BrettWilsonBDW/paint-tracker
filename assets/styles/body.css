@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  
+  .box {
+    text-align: center;
+  }
+  
+  p {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+  

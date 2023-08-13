@@ -1,0 +1,827 @@
+{
+    "1": {
+        "name": "Grey Primer",
+        "id": "1",
+        "have": false
+    },
+    "2": {
+        "name": "Emerald",
+        "id": "2",
+        "have": false
+    },
+    "3": {
+        "name": "Brunswick Green",
+        "id": "3",
+        "have": false
+    },
+    "5": {
+        "name": "Dark Admiral Grey",
+        "id": "5",
+        "have": false
+    },
+    "7": {
+        "name": "Light Buff",
+        "id": "7",
+        "have": false
+    },
+    "9": {
+        "name": "Tan",
+        "id": "9",
+        "have": false
+    },
+    "10": {
+        "name": "Service Brown",
+        "id": "10",
+        "have": false
+    },
+    "11": {
+        "name": "Silver",
+        "id": "11",
+        "have": false
+    },
+    "12": {
+        "name": "Copper",
+        "id": "12",
+        "have": false
+    },
+    "14": {
+        "name": "French Blue",
+        "id": "14",
+        "have": false
+    },
+    "15": {
+        "name": "Midnight Blue",
+        "id": "15",
+        "have": false
+    },
+    "16": {
+        "name": "Gold",
+        "id": "16",
+        "have": false
+    },
+    "18": {
+        "name": "Orange",
+        "id": "18",
+        "have": false
+    },
+    "19": {
+        "name": "Bright Red",
+        "id": "19",
+        "have": false
+    },
+    "20": {
+        "name": "Crimson",
+        "id": "20",
+        "have": false
+    },
+    "21": {
+        "name": "Black",
+        "id": "21",
+        "have": false
+    },
+    "22": {
+        "name": "White",
+        "id": "22",
+        "have": false
+    },
+    "23": {
+        "name": "Duck Egg Blue",
+        "id": "23",
+        "have": false
+    },
+    "24": {
+        "name": "Trainer Yellow",
+        "id": "24",
+        "have": false
+    },
+    "25": {
+        "name": "Blue",
+        "id": "25",
+        "have": false
+    },
+    "26": {
+        "name": "Khaki",
+        "id": "26",
+        "have": false
+    },
+    "27": {
+        "name": "Sea Grey",
+        "id": "27",
+        "have": false
+    },
+    "28": {
+        "name": "Camouflage Grey",
+        "id": "28",
+        "have": false
+    },
+    "29": {
+        "name": "Dark Earth",
+        "id": "29",
+        "have": false
+    },
+    "30": {
+        "name": "Dark Green",
+        "id": "30",
+        "have": false
+    },
+    "31": {
+        "name": "Slate Grey",
+        "id": "31",
+        "have": false
+    },
+    "32": {
+        "name": "Dark Grey",
+        "id": "32",
+        "have": false
+    },
+    "33": {
+        "name": "Matt Black",
+        "id": "33",
+        "have": false
+    },
+    "34": {
+        "name": "Matt White",
+        "id": "34",
+        "have": false
+    },
+    "35": {
+        "name": "Gloss Varnish",
+        "id": "35",
+        "have": false
+    },
+    "38": {
+        "name": "Lime",
+        "id": "38",
+        "have": false
+    },
+    "40": {
+        "name": "Pale Grey",
+        "id": "40",
+        "have": false
+    },
+    "41": {
+        "name": "Ivory",
+        "id": "41",
+        "have": false
+    },
+    "47": {
+        "name": "Sea Blue",
+        "id": "47",
+        "have": false
+    },
+    "48": {
+        "name": "Mediterranean Blue",
+        "id": "48",
+        "have": false
+    },
+    "49": {
+        "name": "Matt Varnish",
+        "id": "49",
+        "have": false
+    },
+    "50": {
+        "name": "Green Mist",
+        "id": "50",
+        "have": false
+    },
+    "51": {
+        "name": "Sunset Red",
+        "id": "51",
+        "have": false
+    },
+    "52": {
+        "name": "Baltic Blue",
+        "id": "52",
+        "have": false
+    },
+    "53": {
+        "name": "Gun Metal",
+        "id": "53",
+        "have": false
+    },
+    "56": {
+        "name": "Aluminium",
+        "id": "56",
+        "have": false
+    },
+    "60": {
+        "name": "Scarlet",
+        "id": "60",
+        "have": false
+    },
+    "61": {
+        "name": "Flesh",
+        "id": "61",
+        "have": false
+    },
+    "62": {
+        "name": "Leather",
+        "id": "62",
+        "have": false
+    },
+    "63": {
+        "name": "Sand",
+        "id": "63",
+        "have": false
+    },
+    "64": {
+        "name": "Light Grey",
+        "id": "64",
+        "have": false
+    },
+    "65": {
+        "name": "Aircraft Blue",
+        "id": "65",
+        "have": false
+    },
+    "66": {
+        "name": "Olive Drab",
+        "id": "66",
+        "have": false
+    },
+    "67": {
+        "name": "Tank Grey",
+        "id": "67",
+        "have": false
+    },
+    "68": {
+        "name": "Purple",
+        "id": "68",
+        "have": false
+    },
+    "69": {
+        "name": "Yellow",
+        "id": "69",
+        "have": false
+    },
+    "70": {
+        "name": "Brick Red",
+        "id": "70",
+        "have": false
+    },
+    "71": {
+        "name": "Satin Oak",
+        "id": "71",
+        "have": false
+    },
+    "72": {
+        "name": "Khaki Drill",
+        "id": "72",
+        "have": false
+    },
+    "73": {
+        "name": "Wine",
+        "id": "73",
+        "have": false
+    },
+    "74": {
+        "name": "Bronze Green",
+        "id": "74",
+        "have": false
+    },
+    "76": {
+        "name": "Uniform Green",
+        "id": "76",
+        "have": false
+    },
+    "77": {
+        "name": "Navy Blue",
+        "id": "77",
+        "have": false
+    },
+    "78": {
+        "name": "Cockpit Green",
+        "id": "78",
+        "have": false
+    },
+    "79": {
+        "name": "Blue Grey",
+        "id": "79",
+        "have": false
+    },
+    "80": {
+        "name": "Grass Green",
+        "id": "80",
+        "have": false
+    },
+    "81": {
+        "name": "Pale Yellow",
+        "id": "81",
+        "have": false
+    },
+    "82": {
+        "name": "Orange Lining",
+        "id": "82",
+        "have": false
+    },
+    "83": {
+        "name": "Ochre",
+        "id": "83",
+        "have": false
+    },
+    "84": {
+        "name": "Mid Stone",
+        "id": "84",
+        "have": false
+    },
+    "85": {
+        "name": "Coal Black mat",
+        "id": "85",
+        "have": false
+    },
+    "86": {
+        "name": "Light Olive",
+        "id": "86",
+        "have": false
+    },
+    "87": {
+        "name": "Steel Grey",
+        "id": "87",
+        "have": false
+    },
+    "88": {
+        "name": "Deck Green",
+        "id": "88",
+        "have": false
+    },
+    "89": {
+        "name": "Mid Blue",
+        "id": "89",
+        "have": false
+    },
+    "90": {
+        "name": "Beige Green",
+        "id": "90",
+        "have": false
+    },
+    "91": {
+        "name": "Black Green",
+        "id": "91",
+        "have": false
+    },
+    "93": {
+        "name": "Desert Yellow",
+        "id": "93",
+        "have": false
+    },
+    "94": {
+        "name": "Brown Yellow",
+        "id": "94",
+        "have": false
+    },
+    "96": {
+        "name": "RAF Blue",
+        "id": "96",
+        "have": false
+    },
+    "98": {
+        "name": "Chocolate",
+        "id": "98",
+        "have": false
+    },
+    "99": {
+        "name": "Lemon",
+        "id": "99",
+        "have": false
+    },
+    "100": {
+        "name": "Red Brown",
+        "id": "100",
+        "have": false
+    },
+    "101": {
+        "name": "Mid Green",
+        "id": "101",
+        "have": false
+    },
+    "102": {
+        "name": "Army Green",
+        "id": "102",
+        "have": false
+    },
+    "103": {
+        "name": "Cream",
+        "id": "103",
+        "have": false
+    },
+    "104": {
+        "name": "Oxford Blue",
+        "id": "104",
+        "have": false
+    },
+    "105": {
+        "name": "Marine Green",
+        "id": "105",
+        "have": false
+    },
+    "106": {
+        "name": "Ocean Grey",
+        "id": "106",
+        "have": false
+    },
+    "109": {
+        "name": "WW1 Blue",
+        "id": "109",
+        "have": false
+    },
+    "110": {
+        "name": "Natural Wood",
+        "id": "110",
+        "have": false
+    },
+    "111": {
+        "name": "Field Grey",
+        "id": "111",
+        "have": false
+    },
+    "112": {
+        "name": "Field Blue",
+        "id": "112",
+        "have": false
+    },
+    "113": {
+        "name": "Rust",
+        "id": "113",
+        "have": false
+    },
+    "116": {
+        "name": "US Dark Green",
+        "id": "116",
+        "have": false
+    },
+    "117": {
+        "name": "US Light Green",
+        "id": "117",
+        "have": false
+    },
+    "118": {
+        "name": "US Tan",
+        "id": "118",
+        "have": false
+    },
+    "119": {
+        "name": "Light Earth",
+        "id": "119",
+        "have": false
+    },
+    "120": {
+        "name": "Light Green",
+        "id": "120",
+        "have": false
+    },
+    "121": {
+        "name": "Pale Stone",
+        "id": "121",
+        "have": false
+    },
+    "123": {
+        "name": "Extra Dark Seas Grey",
+        "id": "123",
+        "have": false
+    },
+    "125": {
+        "name": "US Dark Grey",
+        "id": "125",
+        "have": false
+    },
+    "126": {
+        "name": "US Med Grey",
+        "id": "126",
+        "have": false
+    },
+    "127": {
+        "name": "US Ghost Grey",
+        "id": "127",
+        "have": false
+    },
+    "128": {
+        "name": "US Compass Grey",
+        "id": "128",
+        "have": false
+    },
+    "129": {
+        "name": "US Gull Grey",
+        "id": "129",
+        "have": false
+    },
+    "130": {
+        "name": "White",
+        "id": "130",
+        "have": false
+    },
+    "131": {
+        "name": "Mid Green",
+        "id": "131",
+        "have": false
+    },
+    "132": {
+        "name": "Red",
+        "id": "132",
+        "have": false
+    },
+    "133": {
+        "name": "Brown",
+        "id": "133",
+        "have": false
+    },
+    "135": {
+        "name": "Satin Varnish",
+        "id": "135",
+        "have": false
+    },
+    "140": {
+        "name": "Gull Grey",
+        "id": "140",
+        "have": false
+    },
+    "144": {
+        "name": "Intermediate Blue",
+        "id": "144",
+        "have": false
+    },
+    "145": {
+        "name": "Medium Grey",
+        "id": "145",
+        "have": false
+    },
+    "147": {
+        "name": "Light Grey",
+        "id": "147",
+        "have": false
+    },
+    "148": {
+        "name": "Radome Tan",
+        "id": "148",
+        "have": false
+    },
+    "149": {
+        "name": "Foliage Green",
+        "id": "149",
+        "have": false
+    },
+    "150": {
+        "name": "Forest Green",
+        "id": "150",
+        "have": false
+    },
+    "153": {
+        "name": "Insignia Red",
+        "id": "153",
+        "have": false
+    },
+    "154": {
+        "name": "Insignia Yellow",
+        "id": "154",
+        "have": false
+    },
+    "155": {
+        "name": "Olive Drab",
+        "id": "155",
+        "have": false
+    },
+    "156": {
+        "name": "Dark Camouflage Grey",
+        "id": "156",
+        "have": false
+    },
+    "157": {
+        "name": "Azure Blue",
+        "id": "157",
+        "have": false
+    },
+    "159": {
+        "name": "Khaki Drab",
+        "id": "159",
+        "have": false
+    },
+    "160": {
+        "name": "German Cam Red Brown",
+        "id": "160",
+        "have": false
+    },
+    "163": {
+        "name": "Dark Green",
+        "id": "163",
+        "have": false
+    },
+    "164": {
+        "name": "Dark Sea Grey",
+        "id": "164",
+        "have": false
+    },
+    "165": {
+        "name": "Medium Sea Grey",
+        "id": "165",
+        "have": false
+    },
+    "166": {
+        "name": "Light Aircraft Grey",
+        "id": "166",
+        "have": false
+    },
+    "167": {
+        "name": "RAF Barley Grey",
+        "id": "167",
+        "have": false
+    },
+    "168": {
+        "name": "Hemp",
+        "id": "168",
+        "have": false
+    },
+    "171": {
+        "name": "Antique Bronze",
+        "id": "171",
+        "have": false
+    },
+    "173": {
+        "name": "Track Colour",
+        "id": "173",
+        "have": false
+    },
+    "174": {
+        "name": "Signal Red",
+        "id": "174",
+        "have": false
+    },
+    "186": {
+        "name": "Brown",
+        "id": "186",
+        "have": false
+    },
+    "187": {
+        "name": "Dark Stone",
+        "id": "187",
+        "have": false
+    },
+    "191": {
+        "name": "Chrome Silver",
+        "id": "191",
+        "have": false
+    },
+    "195": {
+        "name": "Chrome Green",
+        "id": "195",
+        "have": false
+    },
+    "196": {
+        "name": "Light Grey",
+        "id": "196",
+        "have": false
+    },
+    "200": {
+        "name": "Pink",
+        "id": "200",
+        "have": false
+    },
+    "201": {
+        "name": "Black",
+        "id": "201",
+        "have": false
+    },
+    "208": {
+        "name": "Fluorescent Signal Green",
+        "id": "208",
+        "have": false
+    },
+    "209": {
+        "name": "Fluorescent Fire Orange",
+        "id": "209",
+        "have": false
+    },
+    "220": {
+        "name": "Ferrari Red",
+        "id": "220",
+        "have": false
+    },
+    "222": {
+        "name": "Moonlight Blue",
+        "id": "222",
+        "have": false
+    },
+    "224": {
+        "name": "Dark Slate Grey",
+        "id": "224",
+        "have": false
+    },
+    "225": {
+        "name": "Middle Stone",
+        "id": "225",
+        "have": false
+    },
+    "226": {
+        "name": "Interior Green",
+        "id": "226",
+        "have": false
+    },
+    "230": {
+        "name": "Pru Blue",
+        "id": "230",
+        "have": false
+    },
+    "237": {
+        "name": "Desert Tan",
+        "id": "237",
+        "have": false
+    },
+    "238": {
+        "name": "Arrow Red",
+        "id": "238",
+        "have": false
+    },
+    "239": {
+        "name": "British Racing Green",
+        "id": "239",
+        "have": false
+    },
+    "240": {
+        "name": "RLM 02 Grau",
+        "id": "240",
+        "have": false
+    },
+    "241": {
+        "name": "RLM 70 Schwarzgrun",
+        "id": "241",
+        "have": false
+    },
+    "242": {
+        "name": "RLM 71 Dunkelgrun",
+        "id": "242",
+        "have": false
+    },
+    "243": {
+        "name": "RLM 72 Grun",
+        "id": "243",
+        "have": false
+    },
+    "244": {
+        "name": "RLM 73 Grun",
+        "id": "244",
+        "have": false
+    },
+    "245": {
+        "name": "RLM 74 Graugrun",
+        "id": "245",
+        "have": false
+    },
+    "246": {
+        "name": "RLM 52 Grauviolett",
+        "id": "246",
+        "have": false
+    },
+    "247": {
+        "name": "RLM 76 Lichtblau",
+        "id": "247",
+        "have": false
+    },
+    "248": {
+        "name": "RLM 78 Himmelblau",
+        "id": "248",
+        "have": false
+    },
+    "249": {
+        "name": "RLM 79 Sandbraun",
+        "id": "249",
+        "have": false
+    },
+    "250": {
+        "name": "Desert Sand",
+        "id": "250",
+        "have": false
+    },
+    "1321": {
+        "name": "Clear Colour Red",
+        "id": "1321",
+        "have": false
+    },
+    "1322": {
+        "name": "Clear Colour Orange",
+        "id": "1322",
+        "have": false
+    },
+    "1325": {
+        "name": "Clear Colour Green",
+        "id": "1325",
+        "have": false
+    },
+    "27001": {
+        "name": "Aluminium",
+        "id": "27001",
+        "have": false
+    },
+    "27002": {
+        "name": "Polished Aluminium",
+        "id": "27002",
+        "have": false
+    },
+    "27003": {
+        "name": "Polished Steel",
+        "id": "27003",
+        "have": false
+    },
+    "27004": {
+        "name": "Gunmetal",
+        "id": "27004",
+        "have": false
+    }
+}

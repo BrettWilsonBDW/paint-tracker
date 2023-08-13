@@ -1,0 +1,168 @@
+1 	Grey Primer
+2 	Emerald
+3 	Brunswick Green
+5 	Dark Admiral Grey
+7 	Light Buff
+9 	Tan
+10 	Service Brown
+11 	Silver
+12 	Copper
+14 	French Blue
+15 	Midnight Blue
+16 	Gold
+18 	Orange
+19 	Bright Red
+20 	Crimson
+21 	Black
+22 	White
+23 	Duck Egg Blue
+24 	Trainer Yellow
+25 	Blue
+26 	Khaki
+27 	Sea Grey
+28 	Camouflage Grey
+29 	Dark Earth
+30 	Dark Green
+31 	Slate Grey
+32 	Dark Grey
+33 	Matt Black
+34 	Matt White
+35 	Gloss Varnsih
+38 	Lime
+40 	Pale Grey
+41 	Ivory
+47 	Sea Blue
+48 	Mediterranean Blue
+49 	Matt Varnish
+50 	Green Mist
+51 	Sunset Red
+52 	Baltic Blue
+53 	Gun Metal
+56 	Aluminium
+60 	Scarlet
+61 	Flesh
+62 	Leather
+63 	Sand
+64 	Light Grey
+65 	Aircraft Blue
+66 	Olive Drab
+67 	Tank Grey
+68 	Purple
+69 	Yellow
+70 	Brick Red
+71 	Satin Oak
+72 	Khaki Drill
+73 	Wine
+74 	Linen
+75 	
+
+Bronze Green
+76 	Uniform Green
+77 	Navy Blue
+78 	Cockpit Green
+79 	Blue Grey
+80 	Grass Green
+81 	Pale Yellow
+82 	Orange Lining
+83 	Ochre
+84 	Mid Stone
+85 	Coal Black mat
+86 	Light Olive
+87 	Steel Grey
+88 	Deck Green
+89 	Mid Blue
+90 	Beige Green
+91 	Black Green
+93 	Desert Yellow
+94 	Brown Yellow
+96 	RAF Blue
+98 	Chocolate
+99 	Lemon
+100 	Red Brown
+101 	Mid Green
+102 	Army Green
+103 	Cream
+104 	Oxford Blue
+105 	Marine Green
+106 	Ocean Grey
+109 	WW1 Blue
+110 	Natural Wood
+111 	Field Grey
+112 	Field Blue
+113 	Rust
+116 	US Dark Green
+117 	US Light Green
+118 	US Tan
+119 	Light Earth
+120 	Light Green
+121 	Pale Stone
+123 	Extra Dark Seas Grey
+125 	US Dark Grey
+126 	US Med Grey
+127 	US Ghost Grey
+128 	US Compass Grey
+129 	US Gull Grey
+130 	White
+131 	Mid Green
+132 	Red
+133 	Brown
+135 	Satin Varfnish
+140 	Gull Grey
+144 	Intermediate Blue
+145 	Medium Grey
+147 	Light Grey
+148 	Radome Tan
+149 	Foliage Green
+150 	Forest Green
+153 	Insignia Red
+154 	Insignia Yellow
+155 	Olive Drab
+156 	Dark Camoflage Grey
+157 	Azure Blue
+159 	Khaki Drab
+160 	German Cam Red Brown
+163 	Dark Green
+164 	Dark Sea Grey
+165 	Medium Sea Grey
+166 	Light Aircraft Grey
+167 	RAF Barley Grey
+168 	Hemp
+171 	Antique Bronze
+173 	Track Colour
+174 	Signal Red
+186 	Brown
+187 	Dark Stone
+191 	Chrome Silver
+195 	Chrome Green
+196 	Light Grey
+200 	Pink
+201 	Black
+208 	Fluorescent Signal Green
+209 	Fluorescent Fire Orange
+220 	Ferrari Red
+222 	Moonlight Blue
+224 	Dark Slate Grey
+225 	Middle Stone
+226 	Interior Green
+230 	Pru Blue
+237 	Desert Tan
+238 	Arrow Red
+239 	British Racing Green
+240 	RLM 02 Grau
+241 	RLM 70 Schwarzgrun
+242 	RLM 71 Dunkelgrun
+243 	RLM 72 Grun
+244 	RLM 73 Grun
+245 	RLM 74 Graugrun
+246 	RLM 52 Grauviolett
+247 	RLM 76 Lichtblau
+248 	RLM 78 Himmelblau
+249 	RLM 79 Sandbraun
+250 	Desert Sand
+1321 	Clear Colour Red
+1322 	Clear Colour Orange
+1325 	Clear Colour Green
+27001 	Aluminium
+27002 	Polished Aluminium
+27003 	Polished Steel
+27004 	Gunmetal 
