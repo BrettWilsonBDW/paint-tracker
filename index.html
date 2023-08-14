@@ -10,41 +10,40 @@
     <script src="assets/scripts/main.js" defer></script>
     <title>Document</title>
 </head>
-<body>
-    <nav>
-        <div>
-            <H1>Paint Tracker</H1>
-        </div>
-    </nav>
+<header>
+  <nav>
+    <div style="display: flex; justify-content: center; position: relative;">
+      <span style="color: white; margin-right: auto; margin-left: 10px;"><a style="color: white; text-decoration: none;" href="https://github.com/BrettWilsonBDW/paint-tracker" target="blank">github</a></span>
+      <h1 style="margin: 0; position: absolute; left: 50%; transform: translateX(-50%);">Paint Tracker</h1>
+      <span style="color: white; margin-left: auto; margin-right: 10px;"><a style="color: white; text-decoration: none;" href="https://atbdw.com" target="blank">brettwilsondev.com</a></span>
+    </div>
+  </nav>
+</header>
 
-    <!-- <input type="text" id="inputAddPaint">
-    <button id="submitButton">Submit</button>
-    <input type="text" id="inputRemovePaint">
-    <button id="submitButtonFalse">Submit</button> -->
 
-    <!-- <input type="text" id="inputFieldModel">
-    <button id="submitButtonModel">Submit</button> -->
 
-    <!-- <button id="removeButtonModel">clear model build</button> -->
 
-    <!-- <div id="outputDiv"></div> -->
 
+
+
+  <body>
+      
 
     <div class="container">
+        <div class="box">
+          <h2>Paint list of needed paints only</h2>
+          <p class="longP">This is a list of paints you need to get</p>
+          <h3>Needed paints:</h3>
+          <div id="itemOutputModelsNeedOnly"></div>
+        </div>
         <div class="box">
           <h2>List of paints that your models need</h2>
           <p class="longP">Please input the number or name of the paint you need for your models below</p>
           <input type="text" id="inputFieldModel">
           <button id="submitButtonModel">add</button>
           <button id="removeButtonModel">clear all</button>
-          <h3>model paints</h3>
+          <h3>Model paints:</h3>
           <div id="itemOutputModelsNeed"></div>
-        </div>
-        <div class="box">
-          <h2>Paint list of needed paints only</h2>
-          <p class="longP">This is a list of paints you need to get</p>
-          <h3>Needed paints</h3>
-          <div id="itemOutputModelsNeedOnly"></div>
         </div>
         <div class="box">
           <h2>Your paint paint list</h2>
@@ -53,17 +52,27 @@
           <button id="submitButton">Add</button>
           <input type="text" id="inputRemovePaint">
           <button id="submitButtonFalse">remove</button>
-          <h3>your paints</h3>
+          <h3>Your paints:</h3>
           <div id="itemOutputUserPaints"></div>
         </div>
         <div class="box">
           <h2>full paint list</h2>
           <p class="longP">List of all paints below</p>
-          <h3>All paints</h3>
+          <h3>All paints:</h3>
           <div id="itemOutputAll"></div>
         </div>
-        <!-- Add more boxes as needed -->
+
+        <div id="footer" class="box">
+        <footer style="text-align: center; height: 50px; color: black;">
+          <div style="margin-top: 20px; height: 50px;">
+              &copy;
+              <span id="footerC">
+                  <script>document.getElementById('footerC').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+              </span>
+              | Made by <a style="text-decoration: none; color: black;" href="https://github.com/BrettWilsonBDW" target="blank">Brett Wilson</a> 
+          </div>
+        </div>
+      </footer>  
       </div>
-      
 </body>
 </html>

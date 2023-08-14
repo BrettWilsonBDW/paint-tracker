@@ -12,21 +12,24 @@
   width: 60%;
   text-align: center;
   margin: auto;
+  font-style: italic;
 }
   
-
 .container div h2{
   margin-top: 2vh;
   margin-bottom: 2vh;
   font-size: large;
-  font-weight: 100;
+  /* font-weight: 100; */
+  font-weight: bold;
+
 }
 
 .container div h3{
-  margin-top: 2vh;
+  margin-top: 3vh;
   margin-bottom: 2vh;
   font-size: medium;
-  font-weight: 100;
+  /* font-weight: 100; */
+  font-weight: bold;
 }
 
 .container div p{
@@ -40,6 +43,26 @@
   width: 60%;
   margin-top: 4vh;
   border: 2px solid black;
-  
 }
 
+input{
+  width: 4%;
+}
+
+#footer{
+  border: none;
+}
+
+@media (max-width: 650px) {
+  /* Styles to apply if window width is 800px or larger */
+  .box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 420px) {
+  /* Styles to apply if window width is 800px or larger */
+  nav span {
+    display: none;
+  }
+}
