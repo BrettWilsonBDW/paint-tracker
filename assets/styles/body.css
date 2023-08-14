@@ -1,16 +1,45 @@
 .container {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-  }
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.box {
+  text-align: center;
+}
+
+.longP {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
   
-  .box {
-    text-align: center;
-  }
+
+.container div h2{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: large;
+  font-weight: 100;
+}
+
+.container div h3{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: medium;
+  font-weight: 100;
+}
+
+.container div p{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  /* font-size: medium; */
+}
+
+
+.box {
+  width: 60%;
+  margin-top: 4vh;
+  border: 2px solid black;
   
-  p {
-    width: 50%;
-    text-align: center;
-    margin: auto;
-  }
-  
+}
+

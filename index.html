@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/navbar.css">
     <link rel="stylesheet" href="assets/styles/body.css">
+    <link rel="stylesheet" href="assets/styles/buttons.css">
     <script src="assets/scripts/main.js" defer></script>
     <title>Document</title>
 </head>
@@ -16,39 +17,49 @@
         </div>
     </nav>
 
-    <input type="text" id="inputField">
+    <!-- <input type="text" id="inputAddPaint">
     <button id="submitButton">Submit</button>
+    <input type="text" id="inputRemovePaint">
+    <button id="submitButtonFalse">Submit</button> -->
 
-    <input type="text" id="inputFieldFalse">
-    <button id="submitButtonFalse">Submit</button>
+    <!-- <input type="text" id="inputFieldModel">
+    <button id="submitButtonModel">Submit</button> -->
 
-    <input type="text" id="inputFieldModel">
-    <button id="submitButtonModel">Submit</button>
-
-    <button id="removeButtonModel">clear model build</button>
+    <!-- <button id="removeButtonModel">clear model build</button> -->
 
     <!-- <div id="outputDiv"></div> -->
 
 
     <div class="container">
         <div class="box">
-          <h1>Your HumBrol paint</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatum.</p>
-          <div id="itemOutput"></div>
-        </div>
-        <div class="box">
-          <h1>HumBrol paint list model</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatum.</p>
+          <h2>List of paints that your models need</h2>
+          <p class="longP">Please input the number or name of the paint you need for your models below</p>
+          <input type="text" id="inputFieldModel">
+          <button id="submitButtonModel">add</button>
+          <button id="removeButtonModel">clear all</button>
+          <h3>model paints</h3>
           <div id="itemOutputModelsNeed"></div>
         </div>
         <div class="box">
-          <h1>HumBrol paint list model neeed ====================</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatum.</p>
+          <h2>Paint list of needed paints only</h2>
+          <p class="longP">This is a list of paints you need to get</p>
+          <h3>Needed paints</h3>
           <div id="itemOutputModelsNeedOnly"></div>
         </div>
         <div class="box">
-          <h1>HumBrol paint list</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatum.</p>
+          <h2>Your paint paint list</h2>
+          <p class="longP">Please input the number or name of the paint you have below</p>
+          <input type="text" id="inputAddPaint">
+          <button id="submitButton">Add</button>
+          <input type="text" id="inputRemovePaint">
+          <button id="submitButtonFalse">remove</button>
+          <h3>your paints</h3>
+          <div id="itemOutputUserPaints"></div>
+        </div>
+        <div class="box">
+          <h2>full paint list</h2>
+          <p class="longP">List of all paints below</p>
+          <h3>All paints</h3>
           <div id="itemOutputAll"></div>
         </div>
         <!-- Add more boxes as needed -->
