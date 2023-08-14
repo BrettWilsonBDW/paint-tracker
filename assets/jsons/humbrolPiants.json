@@ -280,6 +280,13 @@
         "need": false,
         "get": false
     },
+    "54": {
+        "name": "brass",
+        "id": "54",
+        "have": false,
+        "need": false,
+        "get": false
+    },
     "56": {
         "name": "Aluminium",
         "id": "56",
@@ -1102,6 +1109,13 @@
     "250": {
         "name": "Desert Sand",
         "id": "250",
+        "have": false,
+        "need": false,
+        "get": false
+    },
+    "251": {
+        "name": "Dunkelbraun Matt",
+        "id": "251",
         "have": false,
         "need": false,
         "get": false
