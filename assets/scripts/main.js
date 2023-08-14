@@ -1,19 +1,25 @@
-let jsonData;
+let jsonData = {}; 
 
-function fetchData() {
-  return fetch('assets\\jsons\\humbrolPiants.json')
-    .then(response => response.json())
-    .then(data => {
-      jsonData = data;
-      loadStoredData(); // Load previously stored data
-      displayAllPaints();
-      displayUserPaints();
-      displayModelPaints();
-      processData();
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
+async function fetchData() {
+  try {
+    const response = await fetch('assets\\jsons\\humbrolPiants.json');
+    const newData = await response.json();
+    
+    // Merge new data into existing jsonData without losing current values
+    for (const key in newData) {
+      if (!jsonData[key]) {
+        jsonData[key] = newData[key];
+      }
+    }
+    
+    loadStoredData(); // Load previously stored data
+    displayAllPaints();
+    displayUserPaints();
+    displayModelPaints();
+    processData();
+  } catch (error) {
+    console.error('Error:', error);
+  }
 }
 
 // Load stored data from Local Storage
@@ -256,5 +262,20 @@ document.getElementById("uploadButton").addEventListener("click", function() {
     reader.readAsText(file);
   }
 });
+
+// Function to clear local storage and reset jsonData
+function clearLocalStorageAndData() {
+  localStorage.removeItem('paintData'); // Remove the stored data
+  jsonData = {}; // Reset jsonData
+  displayAllPaints();
+  displayUserPaints();
+  displayModelPaints();
+  displayNeededPaintsOnly();
+  location.reload();
+}
+
+// Call the function when needed, for example, as part of a button click event
+document.getElementById("removeAllKillAll").addEventListener("click", clearLocalStorageAndData);
+
 
 fetchData();
