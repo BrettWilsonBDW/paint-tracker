@@ -46,3 +46,152 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* ===================================================== nav ===================================================== */
+
+nav div {
+    height: 3vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div h1 {
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-size: 24px;
+}
+
+/* ===================================================== buttons ===================================================== */
+
+
+
+/* Styling for all buttons */
+button {
+    background-color: black; /* Green background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the button text */
+    border: none; /* Remove the default button border */
+    cursor: pointer; /* Add pointer cursor on hover */
+  }
+  
+/* Styling for all input boxes */
+input[type="text"] {
+    padding: 10px; /* Padding around the input text */
+    border: 1px solid #ccc; /* Border around the input */
+  }
+  
+  
+     /* Style for the buttons */
+   .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+
+  /* Style for the file input */
+  .file-input {
+    display: none;
+  }
+
+  .file-label {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .file-label:hover {
+    background-color: #45a049;
+  }
+
+/* ===================================================== body ===================================================== */
+
+.container {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+  }
+  
+  .box {
+	text-align: center;
+  }
+  
+  .longP {
+	width: 60%;
+	text-align: center;
+	margin: auto;
+	font-style: italic;
+  }
+	
+  .container div h2{
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	font-size: large;
+	/* font-weight: 100; */
+	font-weight: bold;
+  
+  }
+  
+  .container div h3{
+	margin-top: 3vh;
+	margin-bottom: 2vh;
+	font-size: medium;
+	/* font-weight: 100; */
+	font-weight: bold;
+  }
+  
+  .container div p{
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	/* font-size: medium; */
+  }
+  
+  
+  .box {
+	width: 60%;
+	margin-top: 4vh;
+	border: 2px solid black;
+  }
+  
+  input{
+	width: 4%;
+  }
+  
+  #footer{
+	border: none;
+  }
+  
+  
+  
+  @media (max-width: 650px) {
+	/* Styles to apply if window width is 800px or larger */
+	.box {
+	  width: 90%;
+	}
+  }
+  
+  @media (max-width: 420px) {
+	/* Styles to apply if window width is 800px or larger */
+	nav span {
+	  display: none;
+	}
+  }
+  
+  
+
+  
