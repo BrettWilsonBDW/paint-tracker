@@ -5,6 +5,7 @@ function fetchData() {
     .then(response => response.json())
     .then(data => {
       jsonData = data;
+      loadStoredData(); // Load previously stored data
       displayAllPaints();
       displayUserPaints();
       displayModelPaints();
@@ -15,12 +16,24 @@ function fetchData() {
     });
 }
 
+// Load stored data from Local Storage
+function loadStoredData() {
+  const storedData = localStorage.getItem('paintData');
+  if (storedData) {
+    jsonData = JSON.parse(storedData);
+  }
+}
+
+// Save data to Local Storage
+function saveDataToStorage() {
+  localStorage.setItem('paintData', JSON.stringify(jsonData));
+}
+
+
 function addPaintsToHave() {
   const inputAddPaint = document.getElementById("inputAddPaint");
   const submitButton = document.getElementById("submitButton");
 
-
-  
 
   submitButton.addEventListener("click", function() {
     const inputValue = inputAddPaint.value;
@@ -41,6 +54,7 @@ function addPaintsToHave() {
       // Swallow the error and do nothing
     }
 
+    saveDataToStorage(); // Save updated data
     displayUserPaints();
     displayAllPaints();
     displayModelPaints()
@@ -72,6 +86,7 @@ function removePiantsFromHave() {
       // Swallow the error and do nothing
     }
 
+    saveDataToStorage(); // Save updated data
     displayUserPaints();
     displayAllPaints();
     displayModelPaints()
@@ -121,6 +136,7 @@ function displayModelPaints() {
       value["need"] = false
       value["get"] = false
     }
+    saveDataToStorage(); // Save updated data
     displayNeededPaintsOnly()
   });
 
@@ -166,6 +182,7 @@ function comparPaintData() {
       // Swallow the error and do nothing
     }
 
+    saveDataToStorage(); // Save updated data
     displayModelPaints();
     displayNeededPaintsOnly()
     // console.log(jsonData);
@@ -188,6 +205,7 @@ function displayNeededPaintsOnly() {
 
 
 function processData() {
+  saveDataToStorage(); // Save updated data
   addPaintsToHave();
   removePiantsFromHave();
   comparPaintData();
