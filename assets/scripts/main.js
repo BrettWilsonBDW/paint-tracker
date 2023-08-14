@@ -212,4 +212,49 @@ function processData() {
   // console.log(jsonData);
 }
 
+
+// Add the download code
+document.getElementById("downloadButton").addEventListener("click", function() {
+  const jsonDataString = JSON.stringify(jsonData);
+  const blob = new Blob([jsonDataString], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "paintData.json";
+  a.click();
+  
+  URL.revokeObjectURL(url);
+});
+
+// Add the upload code
+document.getElementById("uploadButton").addEventListener("click", function() {
+  const uploadInput = document.getElementById("uploadInput");
+  const file = uploadInput.files[0];
+
+  if (file) {
+    const reader = new FileReader();
+
+    reader.onload = function(event) {
+      try {
+        const uploadedData = JSON.parse(event.target.result);
+        if (uploadedData && typeof uploadedData === "object") {
+          jsonData = uploadedData;
+          saveDataToStorage();
+          displayAllPaints();
+          displayUserPaints();
+          displayModelPaints();
+          displayNeededPaintsOnly();
+        } else {
+          console.error("Invalid JSON data");
+        }
+      } catch (error) {
+        console.error("Error reading JSON file:", error);
+      }
+    };
+
+    reader.readAsText(file);
+  }
+});
+
 fetchData();
