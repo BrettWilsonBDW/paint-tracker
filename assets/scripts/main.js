@@ -276,6 +276,8 @@ function clearLocalStorageAndData() {
 
 // Call the function when needed, for example, as part of a button click event
 document.getElementById("removeAllKillAll").addEventListener("click", clearLocalStorageAndData);
+document.getElementById("removeAllKillAll").addEventListener("touchstart", clearLocalStorageAndData);
+
 
 
 fetchData();
