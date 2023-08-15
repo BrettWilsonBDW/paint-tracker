@@ -104,31 +104,18 @@ function displayAllPaints() {
   const outputDiv = document.getElementById("itemOutputAll");
   outputDiv.innerHTML = "";
 
-//   for (const key in jsonData) {
-//     const value = jsonData[key];
-//     const itemElement = document.createElement("p");
-//     if (value["have"] === true) {
-//       // itemElement.innerHTML = `${value["id"]} : ${value["name"]} : <span style="color: green;">HAVE</span> `;
-//       itemElement.innerHTML = `<span style="background-color: ${value["hex"]}; width: 25px; height: 25px; display: inline-block;">&nbsp;</span> <span>${value["id"]}</span> : <span>${value["name"]}</span> : <span style="color: green;">HAVE</span>`;
-//     } else {
-//       itemElement.innerHTML = `<span style="background-color: ${value["hex"]}; width: 25px; height: 25px; display: inline-block;">&nbsp;</span> <span>${value["id"]}</span> : <span>${value["name"]}</span> : <span style="color: red;">NEED</span>`;
-//       console.log(jsonData)
-//     }
-//     outputDiv.appendChild(itemElement);
-//   }
-// }
-
 for (const key in jsonData) {
   const value = jsonData[key];
   const itemElement = document.createElement("p");
   itemElement.style.display = "flex";
-  itemElement.style.justifyContent = "center";
+  // itemElement.style.justifyContent = "center";
+  itemElement.style.justifyContent = "flex-start";
   itemElement.style.alignItems = "center";
 
   if (value["have"] === true) {
-    itemElement.innerHTML = `<span style="background-color: ${value["hex"]}; width: 25px; height: 25px; display: inline-block;">&nbsp;</span> <span>${value["id"]}</span> : <span>${value["name"]}</span> : <span style="color: green;">HAVE</span>`;
+    itemElement.innerHTML = `<span style="border: 0.5px solid black; background-color: ${value["hex"]}; width: 25px; height: 25px; display: inline-block;">&nbsp;</span> <span>${value["id"]}</span> : <span>${value["name"]}</span> : <span style="color: green;">HAVE</span>`;
   } else {
-    itemElement.innerHTML = `<span style="background-color: ${value["hex"]}; width: 25px; height: 25px; display: inline-block;">&nbsp;</span> <span>${value["id"]}</span> : <span>${value["name"]}</span> : <span style="color: red;">NEED</span>`;
+    itemElement.innerHTML = `<span style="border: 0.5px solid black;  background-color: ${value["hex"]}; width: 25px; height: 25px; display: inline-block;">&nbsp;</span> <span>${value["id"]}</span> : <span>${value["name"]}</span> : <span style="color: red;">NEED</span>`;
     console.log(jsonData)
   }
   outputDiv.appendChild(itemElement);
