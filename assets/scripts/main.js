@@ -297,6 +297,9 @@ function clearLocalStorageAndData() {
 document.getElementById("removeAllKillAll").addEventListener("click", clearLocalStorageAndData);
 document.getElementById("removeAllKillAll").addEventListener("touchstart", clearLocalStorageAndData);
 
-
-
 fetchData();
+
+
+document.getElementById("printButton").addEventListener("click", function() {
+  window.print();
+});

@@ -193,5 +193,42 @@ input[type="text"] {
   }
   
   
+  /* @media print {
+    .box:not(:first-child) {
+      display: none;
+    }
+  } */
 
+
+  /* @media print {
+    .box:not(:first-child) {
+      display: none;
+    }
+  
+
+    header nav {
+      display: none;
+    }
+  } */
+
+  @media print {
+    .box:not(:first-child) {
+      display: none;
+    }
+  
+    /* Hide the navigation bar */
+    header nav {
+      display: none;
+    }
+  
+    /* Hide the print button */
+    #printButton {
+      display: none;
+    }
+    .noPrint{
+      display: none;
+    }
+  }
+  
+  
   
